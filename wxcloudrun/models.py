@@ -372,8 +372,8 @@ def main(path, save = False):
                 color = (192, 192,192)
             # 将结果写到原图上
             img_o = cv2ImgAddText(img_o, str(result), answer_box[2],  answer_box[1],color, textSize)
-   
+    return img_o
     # 将写满结果的原图保存
     # result_id=str(datetime.now())
     # cv2.imwrite(os.join(result_id,"_",path), img_o)
-    cv2.imwrite("cloud://prod-8g7lbzqkeb6ed463.7072-prod-8g7lbzqkeb6ed463-1314085351/result.png", img_o)
+    # cv2.imwrite("cloud://prod-8g7lbzqkeb6ed463.7072-prod-8g7lbzqkeb6ed463-1314085351/result.png", img_o)
