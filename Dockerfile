@@ -11,7 +11,8 @@ COPY . /detectweb
 
 WORKDIR /detectweb
 
-RUN pip install --upgrade pip && pip install -r requirements.txt -i https://mirror.baidu.com/pypi/simple
+# RUN pip install --upgrade pip && 
+RUN pip install -r requirements.txt -i https://mirror.baidu.com/pypi/simple
 # &&chmod 755 run_server.sh
 
 EXPOSE 8080
