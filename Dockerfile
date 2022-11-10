@@ -5,13 +5,15 @@
 # COPY ./app /app
 FROM python:3.6
 
-LABEL maintainer="xxx <xx@qq.com>"
+# LABEL maintainer="xxx <xx@qq.com>"
 
 COPY . /detectweb
 
 WORKDIR /detectweb
 
-RUN pip install -r requirements.txt -i https://mirror.baidu.com/pypi/simple && pip install gunicorn&&chmod 755 run_server.sh
+RUN -m pip install --upgrade pip
+RUN pip install -r requirements.txt -i https://mirror.baidu.com/pypi/simple && pip install gunicorn
+# &&chmod 755 run_server.sh
 
 EXPOSE 8080
 
