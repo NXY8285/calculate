@@ -7,6 +7,6 @@ sqlparse==0.4.2
 
 tensorflow
 numpy
-shutil
+
 os
 

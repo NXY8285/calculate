@@ -23,7 +23,7 @@ from PIL import Image, ImageDraw, ImageFont
 # import PIL
 import matplotlib.pyplot as plt
 import os
-import shutil
+# import shutil
 # from numpy.core.records import array
 # from numpy.core.shape_base import block
 # import time
@@ -183,7 +183,8 @@ def cut_img(img, mark_boxs, is_square = False):
 def save_imgs(dir_name, imgs):
  
     if os.path.exists(dir_name):
-        shutil.rmtree(dir_name) 
+        os.remove(dir_name)
+        # shutil.rmtree(dir_name) 
     if not os.path.exists(dir_name):    
         os.makedirs(dir_name)
 

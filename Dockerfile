@@ -11,7 +11,7 @@ COPY . /detectweb
 
 WORKDIR /detectweb
 
-RUN -m pip install --upgrade pip
+# RUN -m pip install --upgrade pip
 RUN pip install -r requirements.txt -i https://mirror.baidu.com/pypi/simple && pip install gunicorn
 # &&chmod 755 run_server.sh
 
