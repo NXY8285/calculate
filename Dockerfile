@@ -3,7 +3,7 @@
 # FROM tiangolo/uwsgi-nginx-flask:python3.8
 
 # COPY ./app /app
-FROM python:3.6
+FROM python:3.8
 
 # LABEL maintainer="xxx <xx@qq.com>"
 
